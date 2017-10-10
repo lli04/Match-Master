@@ -8,7 +8,7 @@
 
 import UIKit
 
-/* test */
+// test
 
 class ViewController: UIViewController {
 
