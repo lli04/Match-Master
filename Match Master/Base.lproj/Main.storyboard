@@ -23,7 +23,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="5- Easy"/>
                                 <connections>
-                                    <segue destination="bhM-WW-p2W" kind="show" id="4u9-Wa-sgD"/>
+                                    <segue destination="bhM-WW-p2W" kind="show" id="Zn9-s9-jQS"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0wj-4Y-IwN">
@@ -32,7 +32,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="10- Medium"/>
                                 <connections>
-                                    <segue destination="1MP-rR-HHQ" kind="show" id="B4t-2y-GAs"/>
+                                    <segue destination="bhM-WW-p2W" kind="show" id="E9m-BS-ocB"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1yQ-cU-PPe">
@@ -41,7 +41,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="15- Hard"/>
                                 <connections>
-                                    <segue destination="sIS-gb-FeP" kind="show" id="inx-Vk-8hO"/>
+                                    <segue destination="bhM-WW-p2W" kind="show" id="gQc-zh-W1e"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select a Difficulty" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OQL-2h-hvd">
@@ -57,7 +57,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="20- Expert"/>
                                 <connections>
-                                    <segue destination="qvI-th-Yrz" kind="show" id="CHz-G3-1D5"/>
+                                    <segue destination="bhM-WW-p2W" kind="show" id="eqx-1a-u2x"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -85,51 +85,6 @@
             </objects>
             <point key="canvasLocation" x="2148" y="133"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="jic-WX-zSE">
-            <objects>
-                <viewController id="1MP-rR-HHQ" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="d6i-rg-rcw">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <viewLayoutGuide key="safeArea" id="oIK-RG-tug"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="KWb-A2-Wgu" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2812" y="133"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="Pix-jN-PBB">
-            <objects>
-                <viewController id="sIS-gb-FeP" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="M7f-4k-2mB">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <viewLayoutGuide key="safeArea" id="7Zi-i5-lts"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lEi-4g-q9l" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3522" y="133"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="3um-Ix-BNo">
-            <objects>
-                <viewController id="qvI-th-Yrz" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="iCh-1T-00O">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <viewLayoutGuide key="safeArea" id="ih0-I0-qKG"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="45k-0O-c0f" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4233" y="133"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="eHt-3s-bjT">
             <objects>
@@ -149,4 +104,7 @@
             <point key="canvasLocation" x="594" y="133"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="eqx-1a-u2x"/>
+    </inferredMetricsTieBreakers>
 </document>
