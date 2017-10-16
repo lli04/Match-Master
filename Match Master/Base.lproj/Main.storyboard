@@ -133,6 +133,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Select From Emojis"/>
+                                <connections>
+                                    <segue destination="p3j-bQ-GHF" kind="show" id="hKg-3s-kdu"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Images You Would Like To Start With" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="smW-eO-Y2i">
                                 <rect key="frame" x="0.0" y="64" width="375" height="50"/>
@@ -196,7 +199,22 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pMV-QZ-Ruh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2156" y="-549"/>
+            <point key="canvasLocation" x="2194" y="-904"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="jMa-rf-9d8">
+            <objects>
+                <viewController id="p3j-bQ-GHF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="v2N-da-Jyh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="kSc-j7-Tqf"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tUA-Yf-iIu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2967" y="-904"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="4Zh-PN-TWp">
@@ -214,6 +232,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Select From Emojis"/>
+                                <connections>
+                                    <segue destination="Ve4-Am-3uz" kind="show" id="KtO-PA-TYT"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lj0-hM-tXH">
                                 <rect key="frame" x="0.0" y="348" width="375" height="75"/>
@@ -242,7 +263,22 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vee-AV-cCh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2214" y="233"/>
+            <point key="canvasLocation" x="2193" y="-208"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="CjK-dp-jDn">
+            <objects>
+                <viewController id="Ve4-Am-3uz" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7L5-3z-Drv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="EYt-Kf-oIf"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="07M-wI-xRR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2966" y="-189"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Fxq-n5-TWh">
@@ -271,6 +307,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Select From Emojis"/>
+                                <connections>
+                                    <segue destination="FDh-T4-Cn3" kind="show" id="NoN-j4-AVf"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aVS-GV-dpt">
                                 <rect key="frame" x="0.0" y="364" width="375" height="75"/>
@@ -288,7 +327,22 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bCa-ld-llm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1446" y="904"/>
+            <point key="canvasLocation" x="2193" y="547"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="try-oW-GQu">
+            <objects>
+                <viewController id="FDh-T4-Cn3" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dUN-E9-qd9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="fBf-HI-udR"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TPR-1o-fvZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2966" y="546"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="mlt-H9-Ppi">
@@ -315,6 +369,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Select From Emojis"/>
+                                <connections>
+                                    <segue destination="GST-bm-eDf" kind="show" id="A4a-O3-zbX"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Select Images You Would Like To Start With" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZSG-d2-wGo">
                                 <rect key="frame" x="0.0" y="70" width="375" height="50"/>
@@ -334,7 +391,22 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Aly-Ks-MAR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2156" y="905"/>
+            <point key="canvasLocation" x="2193" y="1290"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="GKb-G3-Ljb">
+            <objects>
+                <viewController id="GST-bm-eDf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7ih-dn-G6p">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="OdW-GI-55W"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P1m-XP-nBk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2999" y="1290"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="eHt-3s-bjT">
