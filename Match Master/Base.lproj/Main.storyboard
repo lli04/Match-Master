@@ -27,7 +27,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="5- Easy"/>
                                 <connections>
-                                    <segue destination="bhM-WW-p2W" kind="show" id="Zn9-s9-jQS"/>
+                                    <segue destination="bhM-WW-p2W" kind="show" id="Mpo-Rb-f6b"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0wj-4Y-IwN">
@@ -39,7 +39,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="10- Medium"/>
                                 <connections>
-                                    <segue destination="bhM-WW-p2W" kind="show" id="E9m-BS-ocB"/>
+                                    <segue destination="84a-JO-gB6" kind="show" id="CZS-tA-Qbd"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1yQ-cU-PPe">
@@ -51,7 +51,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="15- Hard"/>
                                 <connections>
-                                    <segue destination="bhM-WW-p2W" kind="show" id="gQc-zh-W1e"/>
+                                    <segue destination="mPt-Mv-4e5" kind="show" id="rAk-2l-5lO"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select a Difficulty" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OQL-2h-hvd">
@@ -73,7 +73,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="20- Expert"/>
                                 <connections>
-                                    <segue destination="bhM-WW-p2W" kind="show" id="eqx-1a-u2x"/>
+                                    <segue destination="Q3T-YP-9PI" kind="show" id="3cX-kF-78e"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -196,7 +196,145 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pMV-QZ-Ruh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2148" y="133"/>
+            <point key="canvasLocation" x="2156" y="-549"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="4Zh-PN-TWp">
+            <objects>
+                <viewController id="84a-JO-gB6" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HVi-DJ-GLJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GWz-lz-VUr">
+                                <rect key="frame" x="0.0" y="241" width="375" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="YEO-vZ-xi9"/>
+                                    <constraint firstAttribute="height" constant="75" id="ccD-YO-H8m"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Select From Emojis"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lj0-hM-tXH">
+                                <rect key="frame" x="0.0" y="348" width="375" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="IrS-vS-TPh"/>
+                                    <constraint firstAttribute="width" constant="375" id="Xcr-JS-Uma"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Select From Library"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Select Images You Would Like To Start With" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LeB-A0-V5K">
+                                <rect key="frame" x="0.0" y="72" width="375" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="4iM-89-pqv"/>
+                                    <constraint firstAttribute="height" constant="50" id="VY0-oE-h8L"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="GF5-6e-P1b"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vee-AV-cCh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2214" y="233"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Fxq-n5-TWh">
+            <objects>
+                <viewController id="Q3T-YP-9PI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aiv-O6-PLF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Select Images You Would Like To Start With" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f6X-gU-Igv">
+                                <rect key="frame" x="0.0" y="77" width="375" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="T3b-SL-ldl"/>
+                                    <constraint firstAttribute="width" constant="375" id="u78-1e-k6T"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="abQ-Ls-aFk">
+                                <rect key="frame" x="0.0" y="254" width="375" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="PRR-VH-5uG"/>
+                                    <constraint firstAttribute="width" constant="375" id="Wax-Aq-qXJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Select From Emojis"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aVS-GV-dpt">
+                                <rect key="frame" x="0.0" y="364" width="375" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="532-E2-OHD"/>
+                                    <constraint firstAttribute="width" constant="375" id="98S-EG-zKh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Select From Library"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="7ck-o7-Nim"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bCa-ld-llm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1446" y="904"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="mlt-H9-Ppi">
+            <objects>
+                <viewController id="mPt-Mv-4e5" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qlu-8F-6AH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xER-8f-kkY">
+                                <rect key="frame" x="0.0" y="352" width="375" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="Ac6-7a-BCV"/>
+                                    <constraint firstAttribute="height" constant="75" id="M90-Pj-osj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Select From Library"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bEt-cQ-MtD">
+                                <rect key="frame" x="0.0" y="247" width="375" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="A5s-1Y-dlG"/>
+                                    <constraint firstAttribute="height" constant="75" id="e3H-De-23U"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Select From Emojis"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Select Images You Would Like To Start With" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZSG-d2-wGo">
+                                <rect key="frame" x="0.0" y="70" width="375" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Lf5-9C-2pr"/>
+                                    <constraint firstAttribute="width" constant="375" id="igH-Yx-v55"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="m3o-Yb-EMr"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Aly-Ks-MAR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2156" y="905"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="eHt-3s-bjT">
@@ -217,7 +355,4 @@
             <point key="canvasLocation" x="594" y="133"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="eqx-1a-u2x"/>
-    </inferredMetricsTieBreakers>
 </document>
