@@ -5,7 +5,6 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -116,84 +115,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jGE-hr-Zb4">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jGE-hr-Zb4">
                                 <rect key="frame" x="0.0" y="329" width="375" height="75"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="375" id="USN-fq-XlR"/>
-                                    <constraint firstAttribute="height" constant="75" id="cr0-4p-gsw"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Select From Library"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RcC-Qa-RV1">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RcC-Qa-RV1">
                                 <rect key="frame" x="0.0" y="246" width="375" height="75"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="375" id="1xk-y1-SbT"/>
-                                    <constraint firstAttribute="height" constant="75" id="5SL-SA-t6M"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Select From Emojis"/>
                                 <connections>
                                     <segue destination="p3j-bQ-GHF" kind="show" id="hKg-3s-kdu"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Images You Would Like To Start With" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="smW-eO-Y2i">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select Images You Would Like To Start With" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="smW-eO-Y2i">
                                 <rect key="frame" x="0.0" y="64" width="375" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="375" id="CEz-2a-5Gh"/>
-                                    <constraint firstAttribute="height" constant="50" id="erZ-6X-ieh"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="Kjh-Bl-pBQ" firstAttribute="bottom" secondItem="jGE-hr-Zb4" secondAttribute="bottom" constant="263" id="07t-jm-K8y"/>
-                            <constraint firstItem="jGE-hr-Zb4" firstAttribute="centerX" secondItem="smW-eO-Y2i" secondAttribute="centerX" id="341-Mi-f8l"/>
-                            <constraint firstItem="smW-eO-Y2i" firstAttribute="top" secondItem="Kjh-Bl-pBQ" secondAttribute="top" id="3hT-3h-ufC"/>
-                            <constraint firstItem="jGE-hr-Zb4" firstAttribute="trailing" secondItem="smW-eO-Y2i" secondAttribute="trailing" id="51L-wp-FO5"/>
-                            <constraint firstItem="smW-eO-Y2i" firstAttribute="trailing" secondItem="Kjh-Bl-pBQ" secondAttribute="trailing" id="AsJ-Gc-jwI"/>
-                            <constraint firstItem="RcC-Qa-RV1" firstAttribute="trailing" secondItem="jGE-hr-Zb4" secondAttribute="trailing" id="BMa-2r-W2j"/>
-                            <constraint firstItem="RcC-Qa-RV1" firstAttribute="leading" secondItem="55g-dJ-cnH" secondAttribute="leading" id="BYn-pJ-5L8"/>
-                            <constraint firstItem="smW-eO-Y2i" firstAttribute="top" secondItem="55g-dJ-cnH" secondAttribute="top" constant="64" id="DP5-Ni-m8J"/>
-                            <constraint firstItem="jGE-hr-Zb4" firstAttribute="top" secondItem="RcC-Qa-RV1" secondAttribute="bottom" constant="8" symbolic="YES" id="FjD-7z-j3k"/>
-                            <constraint firstItem="smW-eO-Y2i" firstAttribute="leading" secondItem="Kjh-Bl-pBQ" secondAttribute="leading" id="Fyb-cq-Osw"/>
-                            <constraint firstItem="RcC-Qa-RV1" firstAttribute="leading" secondItem="Kjh-Bl-pBQ" secondAttribute="leading" id="HLn-8c-bpF"/>
-                            <constraint firstItem="smW-eO-Y2i" firstAttribute="trailing" secondItem="RcC-Qa-RV1" secondAttribute="trailing" id="Ktq-fM-CUb"/>
-                            <constraint firstItem="RcC-Qa-RV1" firstAttribute="trailing" secondItem="Kjh-Bl-pBQ" secondAttribute="trailing" id="Olo-XL-V85"/>
-                            <constraint firstItem="jGE-hr-Zb4" firstAttribute="centerX" secondItem="55g-dJ-cnH" secondAttribute="centerX" id="RCU-ba-z8Q"/>
-                            <constraint firstItem="jGE-hr-Zb4" firstAttribute="top" secondItem="55g-dJ-cnH" secondAttribute="top" constant="329" id="Wiq-M8-B11"/>
-                            <constraint firstItem="jGE-hr-Zb4" firstAttribute="leading" secondItem="RcC-Qa-RV1" secondAttribute="leading" id="Y2F-xA-m2O"/>
-                            <constraint firstItem="smW-eO-Y2i" firstAttribute="top" secondItem="Kjh-Bl-pBQ" secondAttribute="top" id="YRS-qd-XCT"/>
-                            <constraint firstItem="smW-eO-Y2i" firstAttribute="centerX" secondItem="55g-dJ-cnH" secondAttribute="centerX" id="ZLr-jM-C1g"/>
-                            <constraint firstAttribute="trailing" secondItem="jGE-hr-Zb4" secondAttribute="trailing" id="aUD-ea-aKW"/>
-                            <constraint firstItem="RcC-Qa-RV1" firstAttribute="top" secondItem="55g-dJ-cnH" secondAttribute="top" constant="246" id="bid-W0-zZq"/>
-                            <constraint firstItem="RcC-Qa-RV1" firstAttribute="centerX" secondItem="55g-dJ-cnH" secondAttribute="centerX" id="erL-1j-hga"/>
-                            <constraint firstItem="jGE-hr-Zb4" firstAttribute="trailing" secondItem="Kjh-Bl-pBQ" secondAttribute="trailing" id="f8F-Ac-5yD"/>
-                            <constraint firstItem="jGE-hr-Zb4" firstAttribute="top" secondItem="RcC-Qa-RV1" secondAttribute="bottom" constant="8" id="g79-P0-hWR"/>
-                            <constraint firstItem="jGE-hr-Zb4" firstAttribute="centerX" secondItem="RcC-Qa-RV1" secondAttribute="centerX" id="ggS-bN-z3h"/>
-                            <constraint firstAttribute="trailing" secondItem="RcC-Qa-RV1" secondAttribute="trailing" id="gpn-xw-Rrr"/>
-                            <constraint firstItem="jGE-hr-Zb4" firstAttribute="leading" secondItem="smW-eO-Y2i" secondAttribute="leading" id="hHk-zO-78i"/>
-                            <constraint firstItem="RcC-Qa-RV1" firstAttribute="leading" secondItem="55g-dJ-cnH" secondAttribute="leading" id="hxt-KU-pgY"/>
-                            <constraint firstItem="smW-eO-Y2i" firstAttribute="leading" secondItem="55g-dJ-cnH" secondAttribute="leading" id="hzC-aH-xKr"/>
-                            <constraint firstItem="jGE-hr-Zb4" firstAttribute="leading" secondItem="55g-dJ-cnH" secondAttribute="leading" id="mp1-WW-2MG"/>
-                            <constraint firstItem="jGE-hr-Zb4" firstAttribute="leading" secondItem="55g-dJ-cnH" secondAttribute="leading" id="n53-0C-RX6"/>
-                            <constraint firstAttribute="trailing" secondItem="smW-eO-Y2i" secondAttribute="trailing" id="nKr-Jk-2hY"/>
-                            <constraint firstItem="RcC-Qa-RV1" firstAttribute="leading" secondItem="55g-dJ-cnH" secondAttribute="leading" id="nUt-Yz-ydf"/>
-                            <constraint firstItem="jGE-hr-Zb4" firstAttribute="leading" secondItem="Kjh-Bl-pBQ" secondAttribute="leading" id="ngw-0P-Ii6"/>
-                            <constraint firstItem="RcC-Qa-RV1" firstAttribute="top" secondItem="55g-dJ-cnH" secondAttribute="top" constant="246" id="oXx-ud-ihp"/>
-                            <constraint firstItem="smW-eO-Y2i" firstAttribute="leading" secondItem="55g-dJ-cnH" secondAttribute="leading" id="pAU-s3-GB2"/>
-                            <constraint firstItem="jGE-hr-Zb4" firstAttribute="leading" secondItem="55g-dJ-cnH" secondAttribute="leading" id="pak-ZG-phy"/>
-                            <constraint firstItem="smW-eO-Y2i" firstAttribute="leading" secondItem="55g-dJ-cnH" secondAttribute="leading" id="pzL-dg-RBb"/>
-                            <constraint firstItem="smW-eO-Y2i" firstAttribute="top" secondItem="55g-dJ-cnH" secondAttribute="topMargin" id="q9j-OC-QRH"/>
-                            <constraint firstItem="RcC-Qa-RV1" firstAttribute="centerX" secondItem="smW-eO-Y2i" secondAttribute="centerX" id="r0E-IW-W08"/>
-                            <constraint firstItem="RcC-Qa-RV1" firstAttribute="leading" secondItem="smW-eO-Y2i" secondAttribute="leading" id="s6A-Lc-ren"/>
-                            <constraint firstItem="jGE-hr-Zb4" firstAttribute="top" secondItem="55g-dJ-cnH" secondAttribute="top" constant="329" id="t3p-e5-XxS"/>
-                            <constraint firstItem="smW-eO-Y2i" firstAttribute="top" secondItem="55g-dJ-cnH" secondAttribute="top" constant="64" id="xny-Wx-q29"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Kjh-Bl-pBQ"/>
                     </view>
                 </viewController>
@@ -276,38 +222,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GWz-lz-VUr">
-                                <rect key="frame" x="0.0" y="241" width="375" height="75"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="375" id="YEO-vZ-xi9"/>
-                                    <constraint firstAttribute="height" constant="75" id="ccD-YO-H8m"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lj0-hM-tXH">
+                                <rect key="frame" x="0.0" y="329" width="375" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Select From Library"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select Images You Would Like To Start With" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LeB-A0-V5K">
+                                <rect key="frame" x="0.0" y="64" width="375" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GWz-lz-VUr">
+                                <rect key="frame" x="0.0" y="246" width="375" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Select From Emojis"/>
                                 <connections>
                                     <segue destination="Ve4-Am-3uz" kind="show" id="KtO-PA-TYT"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lj0-hM-tXH">
-                                <rect key="frame" x="0.0" y="348" width="375" height="75"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="75" id="IrS-vS-TPh"/>
-                                    <constraint firstAttribute="width" constant="375" id="Xcr-JS-Uma"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Select From Library"/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Select Images You Would Like To Start With" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LeB-A0-V5K">
-                                <rect key="frame" x="0.0" y="72" width="375" height="50"/>
-                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="375" id="4iM-89-pqv"/>
-                                    <constraint firstAttribute="height" constant="50" id="VY0-oE-h8L"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="GF5-6e-P1b"/>
@@ -340,35 +277,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Select Images You Would Like To Start With" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f6X-gU-Igv">
-                                <rect key="frame" x="0.0" y="77" width="375" height="50"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select Images You Would Like To Start With" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f6X-gU-Igv">
+                                <rect key="frame" x="0.0" y="64" width="375" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="T3b-SL-ldl"/>
-                                    <constraint firstAttribute="width" constant="375" id="u78-1e-k6T"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="abQ-Ls-aFk">
-                                <rect key="frame" x="0.0" y="254" width="375" height="75"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="75" id="PRR-VH-5uG"/>
-                                    <constraint firstAttribute="width" constant="375" id="Wax-Aq-qXJ"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="abQ-Ls-aFk">
+                                <rect key="frame" x="0.0" y="246" width="375" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Select From Emojis"/>
                                 <connections>
                                     <segue destination="FDh-T4-Cn3" kind="show" id="NoN-j4-AVf"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aVS-GV-dpt">
-                                <rect key="frame" x="0.0" y="364" width="375" height="75"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="75" id="532-E2-OHD"/>
-                                    <constraint firstAttribute="width" constant="375" id="98S-EG-zKh"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aVS-GV-dpt">
+                                <rect key="frame" x="0.0" y="329" width="375" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Select From Library"/>
                             </button>
@@ -404,34 +332,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xER-8f-kkY">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xER-8f-kkY">
                                 <rect key="frame" x="0.0" y="352" width="375" height="75"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="375" id="Ac6-7a-BCV"/>
-                                    <constraint firstAttribute="height" constant="75" id="M90-Pj-osj"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Select From Library"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bEt-cQ-MtD">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bEt-cQ-MtD">
                                 <rect key="frame" x="0.0" y="247" width="375" height="75"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="375" id="A5s-1Y-dlG"/>
-                                    <constraint firstAttribute="height" constant="75" id="e3H-De-23U"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Select From Emojis"/>
                                 <connections>
                                     <segue destination="GST-bm-eDf" kind="show" id="A4a-O3-zbX"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Select Images You Would Like To Start With" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZSG-d2-wGo">
-                                <rect key="frame" x="0.0" y="70" width="375" height="50"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select Images You Would Like To Start With" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZSG-d2-wGo">
+                                <rect key="frame" x="0.0" y="64" width="375" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="Lf5-9C-2pr"/>
-                                    <constraint firstAttribute="width" constant="375" id="igH-Yx-v55"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
