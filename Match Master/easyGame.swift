@@ -27,7 +27,16 @@ class easyGame: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        button1.backgroundColor = UIColor.blue
+        button2.backgroundColor = UIColor.blue
+        button3.backgroundColor = UIColor.blue
+        button4.backgroundColor = UIColor.blue
+        button5.backgroundColor = UIColor.blue
+        button6.backgroundColor = UIColor.blue
+        button7.backgroundColor = UIColor.blue
+        button8.backgroundColor = UIColor.blue
+        button9.backgroundColor = UIColor.blue
+        button0.backgroundColor = UIColor.blue
        
     }
     @IBAction func button1(_ sender: UIButton) {
@@ -36,32 +45,41 @@ class easyGame: UIViewController {
     }
     @IBAction func button2(_ sender: UIButton) {
         button2.setImage(#imageLiteral(resourceName: "emoji2"), for: .normal)
+        button2.backgroundColor = UIColor.clear
         
     }
     @IBAction func button3(_ sender: UIButton) {
         button3.setImage(#imageLiteral(resourceName: "emoji3"), for: .normal)
+        button3.backgroundColor = UIColor.clear
     }
     @IBAction func button4(_ sender: UIButton) {
         button4.setImage(#imageLiteral(resourceName: "emoji4"), for: .normal)
+        button4.backgroundColor = UIColor.clear
     }
     @IBAction func button5(_ sender: UIButton) {
         button5.setImage(#imageLiteral(resourceName: "emoji5"), for: .normal)
+        button5.backgroundColor = UIColor.clear
     }
     
     @IBAction func button6(_ sender: UIButton) {
         button6.setImage(#imageLiteral(resourceName: "emoji1"), for: .normal)
+        button6.backgroundColor = UIColor.clear
     }
     @IBAction func button7(_ sender: UIButton) {
         button7.setImage(#imageLiteral(resourceName: "emoji2"), for: .normal)
+        button7.backgroundColor = UIColor.clear
     }
     @IBAction func button8(_ sender: UIButton) {
         button8.setImage(#imageLiteral(resourceName: "emoji3"), for: .normal)
+        button8.backgroundColor = UIColor.clear
     }
     @IBAction func button9(_ sender: UIButton) {
         button9.setImage(#imageLiteral(resourceName: "emoji4"), for: .normal)
+        button9.backgroundColor = UIColor.clear
     }
     @IBAction func button10(_ sender: UIButton) {
         button0.setImage(#imageLiteral(resourceName: "emoji5"), for: .normal)
+        button0.backgroundColor = UIColor.clear
     }
     
     override func didReceiveMemoryWarning() {
