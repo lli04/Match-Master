@@ -32,10 +32,11 @@ class easyGame: UIViewController {
     }
     @IBAction func button1(_ sender: UIButton) {
         button1.setImage(#imageLiteral(resourceName: "emoji1"), for: .normal)
-    
+        button1.backgroundColor = UIColor.clear
     }
     @IBAction func button2(_ sender: UIButton) {
         button2.setImage(#imageLiteral(resourceName: "emoji2"), for: .normal)
+        
     }
     @IBAction func button3(_ sender: UIButton) {
         button3.setImage(#imageLiteral(resourceName: "emoji3"), for: .normal)
