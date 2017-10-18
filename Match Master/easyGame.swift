@@ -27,17 +27,17 @@ class easyGame: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        button1.backgroundColor = UIColor.blue
-        button2.backgroundColor = UIColor.blue
-        button3.backgroundColor = UIColor.blue
-        button4.backgroundColor = UIColor.blue
-        button5.backgroundColor = UIColor.blue
-        button6.backgroundColor = UIColor.blue
-        button7.backgroundColor = UIColor.blue
-        button8.backgroundColor = UIColor.blue
-        button9.backgroundColor = UIColor.blue
-        button0.backgroundColor = UIColor.blue
-       
+//        button1.backgroundColor = UIColor.blue
+//        button2.backgroundColor = UIColor.blue
+//        button3.backgroundColor = UIColor.blue
+//        button4.backgroundColor = UIColor.blue
+//        button5.backgroundColor = UIColor.blue
+//        button6.backgroundColor = UIColor.blue
+//        button7.backgroundColor = UIColor.blue
+//        button8.backgroundColor = UIColor.blue
+//        button9.backgroundColor = UIColor.blue
+//        button0.backgroundColor = UIColor.blue
+//
     }
     @IBAction func button1(_ sender: UIButton) {
         button1.setImage(#imageLiteral(resourceName: "emoji1"), for: .normal)
