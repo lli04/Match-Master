@@ -14,6 +14,8 @@
 		3B5453111F84FF1500F45501 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B54530F1F84FF1500F45501 /* LaunchScreen.storyboard */; };
 		3B54531C1F84FF1500F45501 /* Match_MasterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B54531B1F84FF1500F45501 /* Match_MasterTests.swift */; };
 		3B5453271F84FF1500F45501 /* Match_MasterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5453261F84FF1500F45501 /* Match_MasterUITests.swift */; };
+		979984261F98CE9700E2ACC6 /* hardGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979984251F98CE9700E2ACC6 /* hardGame.swift */; };
+		979984281F98CEB000E2ACC6 /* mediumGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979984271F98CEB000E2ACC6 /* mediumGame.swift */; };
 		E8EECF211F94DC720085F91C /* easyGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EECF201F94DC720085F91C /* easyGame.swift */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +50,8 @@
 		3B5453221F84FF1500F45501 /* Match MasterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Match MasterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B5453261F84FF1500F45501 /* Match_MasterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match_MasterUITests.swift; sourceTree = "<group>"; };
 		3B5453281F84FF1500F45501 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		979984251F98CE9700E2ACC6 /* hardGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hardGame.swift; sourceTree = "<group>"; };
+		979984271F98CEB000E2ACC6 /* mediumGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mediumGame.swift; sourceTree = "<group>"; };
 		E8EECF201F94DC720085F91C /* easyGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = easyGame.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,6 +107,8 @@
 				3B5453081F84FF1500F45501 /* ViewController.swift */,
 				E8EECF201F94DC720085F91C /* easyGame.swift */,
 				3B54530A1F84FF1500F45501 /* Main.storyboard */,
+				979984251F98CE9700E2ACC6 /* hardGame.swift */,
+				979984271F98CEB000E2ACC6 /* mediumGame.swift */,
 				3B54530D1F84FF1500F45501 /* Assets.xcassets */,
 				3B54530F1F84FF1500F45501 /* LaunchScreen.storyboard */,
 				3B5453121F84FF1500F45501 /* Info.plist */,
@@ -262,8 +268,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				979984281F98CEB000E2ACC6 /* mediumGame.swift in Sources */,
 				3B5453091F84FF1500F45501 /* ViewController.swift in Sources */,
 				E8EECF211F94DC720085F91C /* easyGame.swift in Sources */,
+				979984261F98CE9700E2ACC6 /* hardGame.swift in Sources */,
 				3B5453071F84FF1500F45501 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
