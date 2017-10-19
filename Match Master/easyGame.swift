@@ -34,7 +34,7 @@ extension Sequence {
 
 extension Sequence where Iterator.Element : Equatable {
     /// Return `true` iff `element` is in `self`.
-    @warn_unused_result
+//    @warn_unused_result
     public func contains(element: Self.Iterator.Element) -> Bool{
         return true
     }
@@ -42,7 +42,7 @@ extension Sequence where Iterator.Element : Equatable {
 
 extension Sequence {
     /// Return `true` iff an element in `self` satisfies `predicate`.
-    @warn_unused_result
+//    @warn_unused_result
     public func contains( predicate: (Self.Iterator.Element) throws -> Bool) rethrows -> Bool{
         return true
     }
