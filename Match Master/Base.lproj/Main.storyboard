@@ -50,7 +50,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="15- Hard"/>
                                 <connections>
-                                    <segue destination="mPt-Mv-4e5" kind="show" id="rAk-2l-5lO"/>
+                                    <segue destination="Q3T-YP-9PI" kind="show" id="0vD-8J-GhG"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select a Difficulty" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OQL-2h-hvd">
@@ -72,7 +72,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="20- Expert"/>
                                 <connections>
-                                    <segue destination="Q3T-YP-9PI" kind="show" id="3cX-kF-78e"/>
+                                    <segue destination="mPt-Mv-4e5" kind="show" id="6He-GC-Z1i"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1246,7 +1246,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P1m-XP-nBk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2999" y="1290"/>
+            <point key="canvasLocation" x="2997.5999999999999" y="1289.5052473763119"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="eHt-3s-bjT">
