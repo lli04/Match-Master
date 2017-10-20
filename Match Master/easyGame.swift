@@ -87,187 +87,116 @@ class easyGame: UIViewController {
     lazy var laughingArray: Array = [buttonArray[6],buttonArray[7]]
     lazy var scaredArray: Array = [buttonArray[8],buttonArray[9]]
     
-    @IBAction func button1(_ sender: UIButton) {
-        if thinkingArray.contains(where: {$0 === button1}){
-            button1.setImage(#imageLiteral(resourceName: "emoji2"), for: .normal)
-            
-        }else if dabArray.contains(where: {$0 === button1}){
-            button1.setImage(#imageLiteral(resourceName: "emoji1"), for: .normal)
-            
-        }else if okArray.contains(where: {$0 === button1}){
-            button1.setImage(#imageLiteral(resourceName: "emoji4"), for: .normal)
-            
-        }else if laughingArray.contains(where: {$0 === button1}){
-            button1.setImage(#imageLiteral(resourceName: "emoji5"), for: .normal)
-            
-        }else if scaredArray.contains(where: {$0 === button1}){
-            button1.setImage(#imageLiteral(resourceName: "emoji3"), for: .normal)
-            
-        }
-    }
-    @IBAction func button2(_ sender: UIButton) {
-        if thinkingArray.contains(where: {$0 === button2}){
-            button2.setImage(#imageLiteral(resourceName: "emoji2"), for: .normal)
-            
-        }else if dabArray.contains(where: {$0 === button2}){
-            button2.setImage(#imageLiteral(resourceName: "emoji1"), for: .normal)
-            
-        }else if okArray.contains(where: {$0 === button2}){
-            button2.setImage(#imageLiteral(resourceName: "emoji4"), for: .normal)
-            
-        }else if laughingArray.contains(where: {$0 === button2}){
-            button2.setImage(#imageLiteral(resourceName: "emoji5"), for: .normal)
-            
-        }else if scaredArray.contains(where: {$0 === button2}){
-            button2.setImage(#imageLiteral(resourceName: "emoji3"), for: .normal)
+    var imagesShown: Int = 0
+    
+   @IBOutlet weak var compButton1: UIButton!
+   @IBOutlet weak var compButton2: UIButton!
+    
+    func changeButton(button: UIButton){
+        if button.image(for: .normal) == #imageLiteral(resourceName: "Blue"){
+            if imagesShown == 0{
+                if thinkingArray.contains(where: {$0 === button}){
+                    button.setImage(#imageLiteral(resourceName: "emoji2"), for: .normal)
+                    imagesShown += 1
+                    compButton1 = button
+                    
+                }else if dabArray.contains(where: {$0 === button}){
+                    button.setImage(#imageLiteral(resourceName: "emoji1"), for: .normal)
+                    imagesShown += 1
+                    compButton1 = button
+                    
+                }else if okArray.contains(where: {$0 === button}){
+                    button.setImage(#imageLiteral(resourceName: "emoji4"), for: .normal)
+                    imagesShown += 1
+                    compButton1 = button
+                    
+                }else if laughingArray.contains(where: {$0 === button}){
+                    button.setImage(#imageLiteral(resourceName: "emoji5"), for: .normal)
+                    imagesShown += 1
+                    compButton1 = button
+                    
+                }else if scaredArray.contains(where: {$0 === button}){
+                    button.setImage(#imageLiteral(resourceName: "emoji3"), for: .normal)
+                    imagesShown += 1
+                    compButton1 = button
+                
+                }
+            }else if imagesShown == 1{
+                if thinkingArray.contains(where: {$0 === button}){
+                    button.setImage(#imageLiteral(resourceName: "emoji2"), for: .normal)
+                    imagesShown += 1
+                    compButton2 = button
+                    
+                }else if dabArray.contains(where: {$0 === button}){
+                    button.setImage(#imageLiteral(resourceName: "emoji1"), for: .normal)
+                    imagesShown += 1
+                    compButton2 = button
+                    
+                }else if okArray.contains(where: {$0 === button}){
+                    button.setImage(#imageLiteral(resourceName: "emoji4"), for: .normal)
+                    imagesShown += 1
+                    compButton2 = button
+                    
+                }else if laughingArray.contains(where: {$0 === button}){
+                    button.setImage(#imageLiteral(resourceName: "emoji5"), for: .normal)
+                    imagesShown += 1
+                    compButton2 = button
+                    
+                }else if scaredArray.contains(where: {$0 === button}){
+                    button.setImage(#imageLiteral(resourceName: "emoji3"), for: .normal)
+                    imagesShown += 1
+                    compButton2 = button
+                    
+                }
+            }
+        }else{
             
         }
         
+        if imagesShown == 2{
+            if compButton1.image(for: .normal) == compButton2.image(for: .normal){
+                
+            }else if compButton1.image(for: .normal) != compButton2.image(for: .normal){
+                compButton2.setImage(#imageLiteral(resourceName: "Blue"), for: .normal)
+                compButton1.setImage(#imageLiteral(resourceName: "Blue"), for: .normal)
+            }
+            imagesShown = 0
+                
+        }
+        
+    }
+    
+    @IBAction func button1(_ sender: UIButton) {
+        changeButton(button: button1)
+    }
+    @IBAction func button2(_ sender: UIButton) {
+        changeButton(button: button2)
+        
     }
     @IBAction func button3(_ sender: UIButton) {
-        if thinkingArray.contains(where: {$0 === button3}){
-            button3.setImage(#imageLiteral(resourceName: "emoji2"), for: .normal)
-            
-        }else if dabArray.contains(where: {$0 === button3}){
-            button3.setImage(#imageLiteral(resourceName: "emoji1"), for: .normal)
-            
-        }else if okArray.contains(where: {$0 === button3}){
-            button3.setImage(#imageLiteral(resourceName: "emoji4"), for: .normal)
-            
-        }else if laughingArray.contains(where: {$0 === button3}){
-            button3.setImage(#imageLiteral(resourceName: "emoji5"), for: .normal)
-            
-        }else if scaredArray.contains(where: {$0 === button3}){
-            button3.setImage(#imageLiteral(resourceName: "emoji3"), for: .normal)
-            
-        }
+        changeButton(button: button3)
     }
     @IBAction func button4(_ sender: UIButton) {
-        if thinkingArray.contains(where: {$0 === button4}){
-            button4.setImage(#imageLiteral(resourceName: "emoji2"), for: .normal)
-            
-        }else if dabArray.contains(where: {$0 === button4}){
-            button4.setImage(#imageLiteral(resourceName: "emoji1"), for: .normal)
-            
-        }else if okArray.contains(where: {$0 === button4}){
-            button4.setImage(#imageLiteral(resourceName: "emoji4"), for: .normal)
-            
-        }else if laughingArray.contains(where: {$0 === button4}){
-            button4.setImage(#imageLiteral(resourceName: "emoji5"), for: .normal)
-            
-        }else if scaredArray.contains(where: {$0 === button4}){
-            button4.setImage(#imageLiteral(resourceName: "emoji3"), for: .normal)
-            
-        }
+        changeButton(button: button4)
     }
     @IBAction func button5(_ sender: UIButton) {
-        if thinkingArray.contains(where: {$0 === button5}){
-            button5.setImage(#imageLiteral(resourceName: "emoji2"), for: .normal)
-            
-        }else if dabArray.contains(where: {$0 === button5}){
-            button5.setImage(#imageLiteral(resourceName: "emoji1"), for: .normal)
-            
-        }else if okArray.contains(where: {$0 === button5}){
-            button5.setImage(#imageLiteral(resourceName: "emoji4"), for: .normal)
-            
-        }else if laughingArray.contains(where: {$0 === button5}){
-            button5.setImage(#imageLiteral(resourceName: "emoji5"), for: .normal)
-            
-        }else if scaredArray.contains(where: {$0 === button5}){
-            button5.setImage(#imageLiteral(resourceName: "emoji3"), for: .normal)
-            
-        }
+        changeButton(button: button5)
     }
     
     @IBAction func button6(_ sender: UIButton) {
-        if thinkingArray.contains(where: {$0 === button6}){
-            button6.setImage(#imageLiteral(resourceName: "emoji2"), for: .normal)
-            
-        }else if dabArray.contains(where: {$0 === button6}){
-            button6.setImage(#imageLiteral(resourceName: "emoji1"), for: .normal)
-            
-        }else if okArray.contains(where: {$0 === button6}){
-            button6.setImage(#imageLiteral(resourceName: "emoji4"), for: .normal)
-            
-        }else if laughingArray.contains(where: {$0 === button6}){
-            button6.setImage(#imageLiteral(resourceName: "emoji5"), for: .normal)
-            
-        }else if scaredArray.contains(where: {$0 === button6}){
-            button6.setImage(#imageLiteral(resourceName: "emoji3"), for: .normal)
-            
-        }
+        changeButton(button: button6)
     }
     @IBAction func button7(_ sender: UIButton) {
-        if thinkingArray.contains(where: {$0 === button7}){
-            button7.setImage(#imageLiteral(resourceName: "emoji2"), for: .normal)
-            
-        }else if dabArray.contains(where: {$0 === button7}){
-            button7.setImage(#imageLiteral(resourceName: "emoji1"), for: .normal)
-            
-        }else if okArray.contains(where: {$0 === button7}){
-            button7.setImage(#imageLiteral(resourceName: "emoji4"), for: .normal)
-            
-        }else if laughingArray.contains(where: {$0 === button7}){
-            button7.setImage(#imageLiteral(resourceName: "emoji5"), for: .normal)
-            
-        }else if scaredArray.contains(where: {$0 === button7}){
-            button7.setImage(#imageLiteral(resourceName: "emoji3"), for: .normal)
-            
-        }
+        changeButton(button: button7)
     }
     @IBAction func button8(_ sender: UIButton) {
-        if thinkingArray.contains(where: {$0 === button8}){
-            button8.setImage(#imageLiteral(resourceName: "emoji2"), for: .normal)
-            
-        }else if dabArray.contains(where: {$0 === button8}){
-            button8.setImage(#imageLiteral(resourceName: "emoji1"), for: .normal)
-            
-        }else if okArray.contains(where: {$0 === button8}){
-            button8.setImage(#imageLiteral(resourceName: "emoji4"), for: .normal)
-            
-        }else if laughingArray.contains(where: {$0 === button8}){
-            button8.setImage(#imageLiteral(resourceName: "emoji5"), for: .normal)
-            
-        }else if scaredArray.contains(where: {$0 === button8}){
-            button8.setImage(#imageLiteral(resourceName: "emoji3"), for: .normal)
-            
-        }
+        changeButton(button: button8)
     }
     @IBAction func button9(_ sender: UIButton) {
-        if thinkingArray.contains(where: {$0 === button9}){
-            button9.setImage(#imageLiteral(resourceName: "emoji2"), for: .normal)
-            
-        }else if dabArray.contains(where: {$0 === button9}){
-            button9.setImage(#imageLiteral(resourceName: "emoji1"), for: .normal)
-            
-        }else if okArray.contains(where: {$0 === button9}){
-            button9.setImage(#imageLiteral(resourceName: "emoji4"), for: .normal)
-            
-        }else if laughingArray.contains(where: {$0 === button9}){
-            button9.setImage(#imageLiteral(resourceName: "emoji5"), for: .normal)
-            
-        }else if scaredArray.contains(where: {$0 === button9}){
-            button9.setImage(#imageLiteral(resourceName: "emoji3"), for: .normal)
-            
-        }
+        changeButton(button: button9)
     }
     @IBAction func button10(_ sender: UIButton) {
-        if thinkingArray.contains(where: {$0 === button0}){
-            button0.setImage(#imageLiteral(resourceName: "emoji2"), for: .normal)
-            
-        }else if dabArray.contains(where: {$0 === button0}){
-            button0.setImage(#imageLiteral(resourceName: "emoji1"), for: .normal)
-            
-        }else if okArray.contains(where: {$0 === button0}){
-            button0.setImage(#imageLiteral(resourceName: "emoji4"), for: .normal)
-            
-        }else if laughingArray.contains(where: {$0 === button0}){
-            button0.setImage(#imageLiteral(resourceName: "emoji5"), for: .normal)
-            
-        }else if scaredArray.contains(where: {$0 === button0}){
-            button0.setImage(#imageLiteral(resourceName: "emoji3"), for: .normal)
-            
-        }
+        changeButton(button: button0)
     }
     
     override func didReceiveMemoryWarning() {
