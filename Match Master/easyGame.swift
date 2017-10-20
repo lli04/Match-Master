@@ -157,6 +157,7 @@ class easyGame: UIViewController {
             if compButton1.image(for: .normal) == compButton2.image(for: .normal){
                 
             }else if compButton1.image(for: .normal) != compButton2.image(for: .normal){
+                sleep(1)
                 compButton2.setImage(#imageLiteral(resourceName: "Blue"), for: .normal)
                 compButton1.setImage(#imageLiteral(resourceName: "Blue"), for: .normal)
             }
