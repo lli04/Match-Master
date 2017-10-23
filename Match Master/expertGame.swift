@@ -5,8 +5,14 @@ import UIKit
 class expertGame: UIViewController {
 
     var buttonArray:[UIButton] = []
+    
+    var screenWidth: CGFloat = 0.0
+    var screenHeight: CGFloat = 0.0
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        screenWidth = UIScreen.main.bounds.width
+        screenHeight = UIScreen.main.bounds.height
 //        let btn = UIButton(type: .custom) as UIButton
 //        btn.backgroundColor = .blue
 //        btn.setTitle(nil, for: .normal)
@@ -20,24 +26,30 @@ class expertGame: UIViewController {
         }
     
     func createButtons() {
-        for i in 0..<6 {
-            let btn = UIButton(type: .custom) as UIButton
-        btn.backgroundColor = .blue
-        btn.setTitle(nil, for: .normal)
-        btn.frame = CGRect(x: 61 * i + 5, y: 100, width: 65, height: 50)
-        btn.addTarget(self, action: #selector(clickMe), for: .touchUpInside)
-        self.view.addSubview(btn)
-            buttonArray.append(btn)
+        let c = Int((screenWidth - 130.0) / 5.0)
+        let h = Int((screenHeight - 234.0) / 8.0)
+        
+        for i in 0..<5 {
+            for j in 0..<8 {
+                let btn = UIButton(type: .custom) as UIButton
+                btn.backgroundColor = .blue
+                btn.setTitle(nil, for: .normal)
+                btn.frame = CGRect(x: (c + 20) * i + 25, y: (h + 20) * j + 69, width: c, height: h)
+                btn.addTarget(self, action: #selector(clickMe), for: .touchUpInside)
+                self.view.addSubview(btn)
+                buttonArray.append(btn)
+            }
+            
         }
-        for i in 0..<6 {
-            let btn = UIButton(type: .custom) as UIButton
-            btn.backgroundColor = .blue
-            btn.setTitle(nil, for: .normal)
-            btn.frame = CGRect(x: 61 * i + 5, y: 100, width: 65, height: 50)
-            btn.addTarget(self, action: #selector(clickMe), for: .touchUpInside)
-            self.view.addSubview(btn)
-            buttonArray.append(btn)
-        }
+//        for i in 0..<8 {
+//            let btn = UIButton(type: .custom) as UIButton
+//            btn.backgroundColor = .blue
+//            btn.setTitle(nil, for: .normal)
+//            btn.frame = CGRect(x: 61 * i + 5, y: 100, width: 65, height: 50)
+//            btn.addTarget(self, action: #selector(clickMe), for: .touchUpInside)
+//            self.view.addSubview(btn)
+//            buttonArray.append(btn)
+//        }
     }
     
     override func didReceiveMemoryWarning() {
