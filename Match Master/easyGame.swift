@@ -154,12 +154,14 @@ class easyGame: UIViewController {
         }
         
         if imagesShown == 2{
+            
             if compButton1.image(for: .normal) == compButton2.image(for: .normal){
                 
             }else if compButton1.image(for: .normal) != compButton2.image(for: .normal){
-                sleep(1)
-                compButton2.setImage(#imageLiteral(resourceName: "Blue"), for: .normal)
                 compButton1.setImage(#imageLiteral(resourceName: "Blue"), for: .normal)
+                DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+                    self.compButton2.setImage(#imageLiteral(resourceName: "Blue"), for: .normal)
+                }
             }
             imagesShown = 0
                 
