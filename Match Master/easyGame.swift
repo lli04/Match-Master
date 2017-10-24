@@ -88,6 +88,21 @@ class easyGame: UIViewController {
     lazy var scaredArray: Array = [buttonArray[8],buttonArray[9]]
     
     var imagesShown: Int = 0
+    var correctGuess: Int = 0
+    var guesses: Int = 0
+    
+    func restart() {
+        buttonArray.shuffle()
+        thinkingArray = [buttonArray[0],buttonArray[1]]
+        dabArray = [buttonArray[2],buttonArray[3]]
+        okArray = [buttonArray[4],buttonArray[5]]
+        laughingArray = [buttonArray[6],buttonArray[7]]
+        scaredArray = [buttonArray[8],buttonArray[9]]
+        
+        imagesShown = 0
+        correctGuess = 0
+        guesses = 0
+    }
     
    @IBOutlet weak var compButton1: UIButton!
    @IBOutlet weak var compButton2: UIButton!
@@ -156,15 +171,27 @@ class easyGame: UIViewController {
         if imagesShown == 2{
             
             if compButton1.image(for: .normal) == compButton2.image(for: .normal){
+                correctGuess += 1
                 
             }else if compButton1.image(for: .normal) != compButton2.image(for: .normal){
                 compButton1.setImage(#imageLiteral(resourceName: "Blue"), for: .normal)
-                DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
-                    self.compButton2.setImage(#imageLiteral(resourceName: "Blue"), for: .normal)
-                }
+                compButton2.setImage(#imageLiteral(resourceName: "Blue"), for: .normal)
             }
             imagesShown = 0
+            guesses += 1
+            
+            if correctGuess == 5{
                 
+                let alert = UIAlertController(title: "Game Over", message: "You won in \(guesses) guesses!", preferredStyle: UIAlertControllerStyle.alert)
+                
+                let restartAction = UIAlertAction(title: "Play Again?", style: UIAlertActionStyle.default, handler: { (restartAction) in
+                    self.restart()
+                })
+                
+                alert.addAction(restartAction)
+                
+                self.present(alert, animated: true, completion: nil)
+            }
         }
         
     }
