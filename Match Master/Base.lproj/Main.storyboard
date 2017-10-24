@@ -227,10 +227,10 @@
             </objects>
             <point key="canvasLocation" x="2965.5999999999999" y="-904.49775112443785"/>
         </scene>
-        <!--View Controller-->
+        <!--Medium Game-->
         <scene sceneID="CjK-dp-jDn">
             <objects>
-                <viewController id="Ve4-Am-3uz" sceneMemberID="viewController">
+                <viewController id="Ve4-Am-3uz" customClass="mediumGame" customModule="Match_Master" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7L5-3z-Drv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
