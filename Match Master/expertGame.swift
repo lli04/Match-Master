@@ -10,15 +10,9 @@ class expertGame: UIViewController {
     var screenHeight: CGFloat = 0.0
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         screenWidth = UIScreen.main.bounds.width
         screenHeight = UIScreen.main.bounds.height
-//        let btn = UIButton(type: .custom) as UIButton
-//        btn.backgroundColor = .blue
-//        btn.setTitle(nil, for: .normal)
-//        btn.frame = CGRect(x: 100, y: 100, width: 65, height: 50)
-//        btn.addTarget(self, action: #selector(clickMe), for: .touchUpInside)
-//        self.view.addSubview(btn)
+        
         createButtons()
     }
     @objc func clickMe(sender:UIButton!) {
@@ -41,15 +35,6 @@ class expertGame: UIViewController {
             }
             
         }
-//        for i in 0..<8 {
-//            let btn = UIButton(type: .custom) as UIButton
-//            btn.backgroundColor = .blue
-//            btn.setTitle(nil, for: .normal)
-//            btn.frame = CGRect(x: 61 * i + 5, y: 100, width: 65, height: 50)
-//            btn.addTarget(self, action: #selector(clickMe), for: .touchUpInside)
-//            self.view.addSubview(btn)
-//            buttonArray.append(btn)
-//        }
     }
     
     override func didReceiveMemoryWarning() {
