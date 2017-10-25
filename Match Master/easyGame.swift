@@ -93,6 +93,9 @@ class easyGame: UIViewController {
     
     func restart() {
         buttonArray.shuffle()
+        for i in 0 ... (buttonArray.count - 1) {
+            buttonArray[i]?.setImage(#imageLiteral(resourceName: "Blue"), for: .normal)
+        }
         thinkingArray = [buttonArray[0],buttonArray[1]]
         dabArray = [buttonArray[2],buttonArray[3]]
         okArray = [buttonArray[4],buttonArray[5]]
