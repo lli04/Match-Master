@@ -21,7 +21,7 @@ class hardGame: UIViewController {
     
     func createButtons() {
         let c = Int((screenWidth - 130.0) / 5.0)
-        let h = Int((screenHeight - 244.0) / 6.0)
+        let h = Int((screenHeight - 244.0) / 8.0)
         
         for i in 0..<5 {
             for j in 0..<6 {
