@@ -26,7 +26,7 @@ class hardGame: UIViewController {
         for i in 0..<5 {
             for j in 0..<6 {
                 let btn = UIButton(type: .custom) as UIButton
-                btn.backgroundColor = .blue
+                btn.setImage(#imageLiteral(resourceName: "Blue"), for: .normal)
                 btn.setTitle(nil, for: .normal)
                 btn.frame = CGRect(x: (c + 20) * i + 25, y: (h + 20) * j + 94, width: c, height: h)
                 btn.addTarget(self, action: #selector(clickMe), for: .touchUpInside)
