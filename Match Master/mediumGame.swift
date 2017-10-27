@@ -23,7 +23,7 @@ class mediumGame: UIViewController {
         screenHeight = UIScreen.main.bounds.height
        
         createButtons()
-        
+        buttonArray.shuffle()
     }
     @objc func clickMe(sender:UIButton!) {
         let myIndex = buttonArray.index(of: sender)
@@ -228,7 +228,7 @@ class mediumGame: UIViewController {
             imagesShown = 0
             guesses += 1
             
-            if correctGuess == 5{
+            if correctGuess == 10{
                 
                 let alert = UIAlertController(title: "Game Over", message: "You won in \(guesses) guesses!", preferredStyle: UIAlertControllerStyle.alert)
                 
