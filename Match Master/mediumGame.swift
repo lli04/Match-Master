@@ -9,6 +9,7 @@ class mediumGame: UIViewController {
     
     var screenWidth: CGFloat = 0.0
     var screenHeight: CGFloat = 0.0
+    var imageShown: Int = 0.0 
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -39,13 +40,125 @@ class mediumGame: UIViewController {
                 self.view.addSubview(btn)
                 
                 // do some image logic
-                let newBlock = Block(myBUtton: btn, myImage: #imageLiteral(resourceName: "emoji3"))
+                let newBlock = Block(myBUtton: btn, myImage: #imageLiteral(resourceName: "emoji1"))
+                let newBlock2 = Block(myBUtton: btn, myImage: #imageLiteral(resourceName: "emoji2"))
+                let newBlock3 = Block(myBUtton: btn, myImage: #imageLiteral(resourceName: "emoji3"))
+                let newBlock4 = Block(myBUtton: btn, myImage: #imageLiteral(resourceName: "emoji4"))
+                let newBlock5 = Block(myBUtton: btn, myImage: #imageLiteral(resourceName: "emoji5"))
+                let newBlock6 = Block(myBUtton: btn, myImage: #imageLiteral(resourceName: "emoji6"))
+                let newBlock7 = Block(myBUtton: btn, myImage: #imageLiteral(resourceName: "emoji7"))
+                let newBlock8 = Block(myBUtton: btn, myImage: #imageLiteral(resourceName: "emoji8"))
+                let newBlock9 = Block(myBUtton: btn, myImage: #imageLiteral(resourceName: "emoji9"))
+                let newBlock10 = Block(myBUtton: btn, myImage: #imageLiteral(resourceName: "emoji10"))
+
+
+                
                 
                 blockArray.append(newBlock)
+                blockArray.append(newBlock2)
+                blockArray.append(newBlock3)
+                blockArray.append(newBlock3)
+                blockArray.append(newBlock4)
+                blockArray.append(newBlock5)
+                blockArray.append(newBlock6)
+                blockArray.append(newBlock7)
+                blockArray.append(newBlock8)
+                blockArray.append(newBlock9)
+                blockArray.append(newBlock10)
+
                 buttonArray.append(btn)
             }
             
         }
+    }
+    
+    func changeButton(button: UIButton){
+        if button.image(for: .normal) == #imageLiteral(resourceName: "Blue"){
+            if imagesShown == 0{
+                if blockArray.contains(where: {$0 === button}){
+                    button.setImage(#imageLiteral(resourceName: "emoji2"), for: .normal)
+                    imagesShown += 1
+                    compButton1 = button
+                    
+                }else if blockArray.contains(where: {$0 === button}){
+                    button.setImage(#imageLiteral(resourceName: "emoji1"), for: .normal)
+                    imagesShown += 1
+                    compButton1 = button
+                    
+                }else if blockArray.contains(where: {$0 === button}){
+                    button.setImage(#imageLiteral(resourceName: "emoji4"), for: .normal)
+                    imagesShown += 1
+                    compButton1 = button
+                    
+                }else if blockArray.contains(where: {$0 === button}){
+                    button.setImage(#imageLiteral(resourceName: "emoji5"), for: .normal)
+                    imagesShown += 1
+                    compButton1 = button
+                    
+                }else if blockArray.contains(where: {$0 === button}){
+                    button.setImage(#imageLiteral(resourceName: "emoji3"), for: .normal)
+                    imagesShown += 1
+                    compButton1 = button
+                    
+                }
+            }else if imagesShown == 1{
+                if blockArray.contains(where: {$0 === button}){
+                    button.setImage(#imageLiteral(resourceName: "emoji2"), for: .normal)
+                    imagesShown += 1
+                    compButton2 = button
+                    
+                }else if blockArray.contains(where: {$0 === button}){
+                    button.setImage(#imageLiteral(resourceName: "emoji1"), for: .normal)
+                    imagesShown += 1
+                    compButton2 = button
+                    
+                }else if blockArray.contains(where: {$0 === button}){
+                    button.setImage(#imageLiteral(resourceName: "emoji4"), for: .normal)
+                    imagesShown += 1
+                    compButton2 = button
+                    
+                }else if blockArray.contains(where: {$0 === button}){
+                    button.setImage(#imageLiteral(resourceName: "emoji5"), for: .normal)
+                    imagesShown += 1
+                    compButton2 = button
+                    
+                }else if blockArray.contains(where: {$0 === button}){
+                    button.setImage(#imageLiteral(resourceName: "emoji3"), for: .normal)
+                    imagesShown += 1
+                    compButton2 = button
+                    
+                }
+            }
+        }else{
+            
+        }
+        
+        if imagesShown == 2{
+            
+            if compButton1.image(for: .normal) == compButton2.image(for: .normal){
+                correctGuess += 1
+                
+            }else if compButton1.image(for: .normal) != compButton2.image(for: .normal){
+                compButton1.setImage(#imageLiteral(resourceName: "Blue"), for: .normal)
+                compButton2.setImage(#imageLiteral(resourceName: "Blue"), for: .normal)
+            }
+            imagesShown = 0
+            guesses += 1
+            
+            if correctGuess == 5{
+                
+                let alert = UIAlertController(title: "Game Over", message: "You won in \(guesses) guesses!", preferredStyle: UIAlertControllerStyle.alert)
+                
+                let restartAction = UIAlertAction(title: "Play Again?", style: UIAlertActionStyle.default, handler: { (restartAction) in
+                    self.restart()
+                })
+                
+                alert.addAction(restartAction)
+                
+                self.present(alert, animated: true, completion: nil)
+            }
+        }
+        
     }
     
     override func didReceiveMemoryWarning() {
