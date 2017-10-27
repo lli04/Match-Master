@@ -4,12 +4,18 @@ import UIKit
 
 class mediumGame: UIViewController {
     
-    var buttonArray:[UIButton] = []
+    lazy var buttonArray: [UIButton] = []
     var blockArray:[Block] = []
     
     var screenWidth: CGFloat = 0.0
     var screenHeight: CGFloat = 0.0
-    var imageShown: Int = 0.0 
+    var imagesShown: Int = 0
+    var correctGuess: Int = 0
+    var guesses: Int = 0
+    
+    @IBOutlet weak var compButton1: UIButton!
+    @IBOutlet weak var compButton2: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -23,7 +29,23 @@ class mediumGame: UIViewController {
         let myIndex = buttonArray.index(of: sender)
         let selectedBlock = blockArray[myIndex!]
         
-        sender.setImage(selectedBlock.image, for: [])
+        changeButton(button: sender)
+    }
+    
+    func restart() {
+        buttonArray.shuffle()
+        for i in 0 ... (buttonArray.count - 1) {
+            buttonArray[i].setImage(#imageLiteral(resourceName: "Blue"), for: .normal)
+        }
+        thinkingArray = [buttonArray[0],buttonArray[1]]
+        dabArray = [buttonArray[2],buttonArray[3]]
+        okArray = [buttonArray[4],buttonArray[5]]
+        laughingArray = [buttonArray[6],buttonArray[7]]
+        scaredArray = [buttonArray[8],buttonArray[9]]
+        
+        imagesShown = 0
+        correctGuess = 0
+        guesses = 0
     }
     
     func createButtons() {
@@ -49,7 +71,7 @@ class mediumGame: UIViewController {
                 let newBlock7 = Block(myBUtton: btn, myImage: #imageLiteral(resourceName: "emoji7"))
                 let newBlock8 = Block(myBUtton: btn, myImage: #imageLiteral(resourceName: "emoji8"))
                 let newBlock9 = Block(myBUtton: btn, myImage: #imageLiteral(resourceName: "emoji9"))
-                let newBlock10 = Block(myBUtton: btn, myImage: #imageLiteral(resourceName: "emoji10"))
+                let newBlock10 = Block(myBUtton: btn, myImage: #imageLiteral(resourceName: "emoji17"))
 
 
                 
@@ -72,31 +94,67 @@ class mediumGame: UIViewController {
         }
     }
     
+    lazy var thinkingArray: Array = [buttonArray[0],buttonArray[1]]
+    lazy var dabArray: Array = [buttonArray[2],buttonArray[3]]
+    lazy var okArray: Array = [buttonArray[4],buttonArray[5]]
+    lazy var laughingArray: Array = [buttonArray[6],buttonArray[7]]
+    lazy var scaredArray: Array = [buttonArray[8],buttonArray[9]]
+    lazy var kissArray: Array = [buttonArray[10],buttonArray[11]]
+    lazy var nerdArray: Array = [buttonArray[12],buttonArray[13]]
+    lazy var tongueArray: Array = [buttonArray[14],buttonArray[15]]
+    lazy var glassesArray: Array = [buttonArray[16],buttonArray[17]]
+    lazy var moneyArray: Array = [buttonArray[18],buttonArray[19]]
+    
     func changeButton(button: UIButton){
         if button.image(for: .normal) == #imageLiteral(resourceName: "Blue"){
             if imagesShown == 0{
-                if blockArray.contains(where: {$0 === button}){
+                if thinkingArray.contains(where: {$0 === button}){
                     button.setImage(#imageLiteral(resourceName: "emoji2"), for: .normal)
                     imagesShown += 1
                     compButton1 = button
                     
-                }else if blockArray.contains(where: {$0 === button}){
+                }else if dabArray.contains(where: {$0 === button}){
                     button.setImage(#imageLiteral(resourceName: "emoji1"), for: .normal)
                     imagesShown += 1
                     compButton1 = button
                     
-                }else if blockArray.contains(where: {$0 === button}){
+                }else if okArray.contains(where: {$0 === button}){
                     button.setImage(#imageLiteral(resourceName: "emoji4"), for: .normal)
                     imagesShown += 1
                     compButton1 = button
                     
-                }else if blockArray.contains(where: {$0 === button}){
+                }else if laughingArray.contains(where: {$0 === button}){
                     button.setImage(#imageLiteral(resourceName: "emoji5"), for: .normal)
                     imagesShown += 1
                     compButton1 = button
                     
-                }else if blockArray.contains(where: {$0 === button}){
+                }else if scaredArray.contains(where: {$0 === button}){
                     button.setImage(#imageLiteral(resourceName: "emoji3"), for: .normal)
+                    imagesShown += 1
+                    compButton1 = button
+                    
+                }else if kissArray.contains(where: {$0 === button}){
+                    button.setImage(#imageLiteral(resourceName: "emoji6"), for: .normal)
+                    imagesShown += 1
+                    compButton1 = button
+                    
+                }else if nerdArray.contains(where: {$0 === button}){
+                    button.setImage(#imageLiteral(resourceName: "emoji7"), for: .normal)
+                    imagesShown += 1
+                    compButton1 = button
+                    
+                }else if tongueArray.contains(where: {$0 === button}){
+                    button.setImage(#imageLiteral(resourceName: "emoji8"), for: .normal)
+                    imagesShown += 1
+                    compButton1 = button
+                    
+                }else if glassesArray.contains(where: {$0 === button}){
+                    button.setImage(#imageLiteral(resourceName: "emoji9"), for: .normal)
+                    imagesShown += 1
+                    compButton1 = button
+                    
+                }else if moneyArray.contains(where: {$0 === button}){
+                    button.setImage(#imageLiteral(resourceName: "emoji17"), for: .normal)
                     imagesShown += 1
                     compButton1 = button
                     
@@ -124,6 +182,31 @@ class mediumGame: UIViewController {
                     
                 }else if blockArray.contains(where: {$0 === button}){
                     button.setImage(#imageLiteral(resourceName: "emoji3"), for: .normal)
+                    imagesShown += 1
+                    compButton2 = button
+                    
+                }else if kissArray.contains(where: {$0 === button}){
+                    button.setImage(#imageLiteral(resourceName: "emoji6"), for: .normal)
+                    imagesShown += 1
+                    compButton2 = button
+                    
+                }else if nerdArray.contains(where: {$0 === button}){
+                    button.setImage(#imageLiteral(resourceName: "emoji7"), for: .normal)
+                    imagesShown += 1
+                    compButton2 = button
+                    
+                }else if tongueArray.contains(where: {$0 === button}){
+                    button.setImage(#imageLiteral(resourceName: "emoji8"), for: .normal)
+                    imagesShown += 1
+                    compButton2 = button
+                    
+                }else if glassesArray.contains(where: {$0 === button}){
+                    button.setImage(#imageLiteral(resourceName: "emoji9"), for: .normal)
+                    imagesShown += 1
+                    compButton2 = button
+                    
+                }else if moneyArray.contains(where: {$0 === button}){
+                    button.setImage(#imageLiteral(resourceName: "emoji17"), for: .normal)
                     imagesShown += 1
                     compButton2 = button
                     
