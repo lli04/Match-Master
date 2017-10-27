@@ -67,18 +67,7 @@ class easyGame: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-//        button1.backgroundColor = UIColor.blue
-//        button2.backgroundColor = UIColor.blue
-//        button3.backgroundColor = UIColor.blue
-//        button4.backgroundColor = UIColor.blue
-//        button5.backgroundColor = UIColor.blue
-//        button6.backgroundColor = UIColor.blue
-//        button7.backgroundColor = UIColor.blue
-//        button8.backgroundColor = UIColor.blue
-//        button9.backgroundColor = UIColor.blue
-//        button0.backgroundColor = UIColor.blue
         
-//
     }
     lazy var buttonArray: Array = [button1,button2,button3,button4,button5,button6,button7,button8,button9,button0].shuffled()
     
