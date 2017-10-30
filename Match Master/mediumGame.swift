@@ -67,33 +67,33 @@ class mediumGame: UIViewController {
                 self.view.addSubview(btn)
                 
                 // do some image logic
-                let newBlock = Block(myBUtton: btn, myImage: #imageLiteral(resourceName: "emoji1"))
-                let newBlock2 = Block(myBUtton: btn, myImage: #imageLiteral(resourceName: "emoji2"))
-                let newBlock3 = Block(myBUtton: btn, myImage: #imageLiteral(resourceName: "emoji3"))
-                let newBlock4 = Block(myBUtton: btn, myImage: #imageLiteral(resourceName: "emoji4"))
-                let newBlock5 = Block(myBUtton: btn, myImage: #imageLiteral(resourceName: "emoji5"))
-                let newBlock6 = Block(myBUtton: btn, myImage: #imageLiteral(resourceName: "emoji6"))
-                let newBlock7 = Block(myBUtton: btn, myImage: #imageLiteral(resourceName: "emoji7"))
-                let newBlock8 = Block(myBUtton: btn, myImage: #imageLiteral(resourceName: "emoji8"))
-                let newBlock9 = Block(myBUtton: btn, myImage: #imageLiteral(resourceName: "emoji9"))
-                let newBlock10 = Block(myBUtton: btn, myImage: #imageLiteral(resourceName: "emoji17"))
-
-
-                
-                
-                blockArray.append(newBlock)
-                blockArray.append(newBlock2)
-                blockArray.append(newBlock3)
-                blockArray.append(newBlock3)
-                blockArray.append(newBlock4)
-                blockArray.append(newBlock5)
-                blockArray.append(newBlock6)
-                blockArray.append(newBlock7)
-                blockArray.append(newBlock8)
-                blockArray.append(newBlock9)
-                blockArray.append(newBlock10)
-
-                buttonArray.append(btn)
+//                let newBlock = Block(myBUtton: btn, myImage: #imageLiteral(resourceName: "emoji1"))
+//                let newBlock2 = Block(myBUtton: btn, myImage: #imageLiteral(resourceName: "emoji2"))
+//                let newBlock3 = Block(myBUtton: btn, myImage: #imageLiteral(resourceName: "emoji3"))
+//                let newBlock4 = Block(myBUtton: btn, myImage: #imageLiteral(resourceName: "emoji4"))
+//                let newBlock5 = Block(myBUtton: btn, myImage: #imageLiteral(resourceName: "emoji5"))
+//                let newBlock6 = Block(myBUtton: btn, myImage: #imageLiteral(resourceName: "emoji6"))
+//                let newBlock7 = Block(myBUtton: btn, myImage: #imageLiteral(resourceName: "emoji7"))
+//                let newBlock8 = Block(myBUtton: btn, myImage: #imageLiteral(resourceName: "emoji8"))
+//                let newBlock9 = Block(myBUtton: btn, myImage: #imageLiteral(resourceName: "emoji9"))
+//                let newBlock10 = Block(myBUtton: btn, myImage: #imageLiteral(resourceName: "emoji17"))
+//
+//
+//
+//
+//                blockArray.append(newBlock)
+//                blockArray.append(newBlock2)
+//                blockArray.append(newBlock3)
+//                blockArray.append(newBlock3)
+//                blockArray.append(newBlock4)
+//                blockArray.append(newBlock5)
+//                blockArray.append(newBlock6)
+//                blockArray.append(newBlock7)
+//                blockArray.append(newBlock8)
+//                blockArray.append(newBlock9)
+//                blockArray.append(newBlock10)
+//
+//                buttonArray.append(btn)
             }
             
         }
