@@ -42,6 +42,11 @@ class mediumGame: UIViewController {
         okArray = [buttonArray[4],buttonArray[5]]
         laughingArray = [buttonArray[6],buttonArray[7]]
         scaredArray = [buttonArray[8],buttonArray[9]]
+        kissArray = [buttonArray[10],buttonArray[11]]
+        nerdArray = [buttonArray[12],buttonArray[13]]
+        tongueArray = [buttonArray[14],buttonArray[15]]
+        glassesArray = [buttonArray[16],buttonArray[17]]
+        moneyArray = [buttonArray[18],buttonArray[19]]
         
         imagesShown = 0
         correctGuess = 0
